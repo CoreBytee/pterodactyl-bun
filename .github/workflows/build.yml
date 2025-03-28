@@ -8,7 +8,7 @@ on:
         - main
 jobs:
   push:
-    name: "bun_${{ matrix.tag }}"
+    name: "yolks:bun_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
