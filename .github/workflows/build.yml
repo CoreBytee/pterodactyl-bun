@@ -35,4 +35,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/yolks:bun_${{ matrix.tag }}
-            ${{ format('ghcr.io/CoreBytee/yolks:bun_{0}', matrix.tag) }}
+            ${{ format('ghcr.io/corebytee/yolks:bun_{0}', matrix.tag) }}
