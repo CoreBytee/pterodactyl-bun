@@ -29,8 +29,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: docker/build-push-action@v6
         with:
-          context: ./bun
-          file: ./bun/${{ matrix.tag }}/Dockerfile
+          context: ./src
+          file: ./src/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
